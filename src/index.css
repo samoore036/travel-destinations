@@ -7,7 +7,101 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ff5a5f;
+  color: white;
+  padding: 0.5rem;
+}
+
+.header img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f0ecec;
+  padding-bottom: 4rem;
+}
+
+.destination-header {
+  box-shadow: 0px 5px 4px 2px rgb(192, 192, 193);
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+
+.main-content h3 {
+  padding-left: 2rem;
+}
+
+.category-div {
+  display: flex;
+  gap: 3rem;
+  overflow-x:scroll;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  
+  padding-right: 0.5rem;
+  min-width: 30%;
+  max-width: 30%;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.price-sticker {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.card img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.more-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.info-link {
+  color: blue;
+}
+
+.maps-link {
+  font-size: .8rem;
+  color: gray;
+}
+
+
